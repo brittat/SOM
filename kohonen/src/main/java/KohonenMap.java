@@ -30,4 +30,8 @@ public class KohonenMap {
     double argument = - this.t/denominator;
     return factor*Math.exp(argument);
   }
+
+  public int findWinner(double[] input) {
+    //Loop over all nodes and find the one with weights closest to input
+  }
 }
