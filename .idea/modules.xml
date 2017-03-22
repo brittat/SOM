@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/SOM.iml" filepath="$PROJECT_DIR$/.idea/modules/SOM.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/SOM_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SOM_main.iml" group="SOM" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/SOM_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SOM_test.iml" group="SOM" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kohonen/kohonen.iml" filepath="$PROJECT_DIR$/.idea/modules/kohonen/kohonen.iml" group="kohonen" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kohonen/kohonen_main.iml" filepath="$PROJECT_DIR$/.idea/modules/kohonen/kohonen_main.iml" group="kohonen" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kohonen/kohonen_test.iml" filepath="$PROJECT_DIR$/.idea/modules/kohonen/kohonen_test.iml" group="kohonen" />
     </modules>
   </component>
 </project>

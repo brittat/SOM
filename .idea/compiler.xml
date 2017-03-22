@@ -19,6 +19,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="kohonen_main" target="1.5" />
+      <module name="kohonen_test" target="1.5" />
       <module name="SOM_main" target="1.5" />
       <module name="SOM_test" target="1.5" />
     </bytecodeTargetLevel>
