@@ -53,6 +53,9 @@ public class KohonenMap {
 
   // Here learningRate will be 1 for the winning neuron
   public void updateWinner(int winner, double learningRate) {
+  public void updateNeuron(String neuron, double learningRate) {
+
+  }
 
   public double getSimilarity(double[] input, double[] neuron) {
     return getMagnitude(input)*getMagnitude(neuron)/dotProduct(input, neuron);
