@@ -57,8 +57,16 @@ public class KohonenMap {
     //get the current max distance to winning neighbors
     // loop through neighbors and see if they're winners
     // alt: do a discrete approx.
-    List<String> winningNeighbors;
-
+    List<String> winningNeighbors = new ArrayList<String>();
+    double distance = getNeighborhoodRadius();
+    for (int i =0; i <this.horizontalNodes; i++) {
+      for (int j = 0; j <this.verticalNodes; j ++) {
+      if (distanceBetweenNeurons(winner, i, j)<distance) {
+        winningNeighbors.add("" + i + j);
+      }
+      }
+    }
+    return winningNeighbors;
   }
 
 
