@@ -32,15 +32,23 @@ public class KohonenMap {
     return factor*Math.exp(argument);
   }
 
-  public int findWinner(double[] input) {
+  public String findWinner(double[] input) {
     //Loop over all nodes and find the one with weights closest to input
     double winningValue = -1;
+    double similarity;
+    String winner = "00";
 
     for (int i = 0; i < horizontalNodes; i ++) {
       for (int j = 0; j < verticalNodes; j ++) {
-
+        String key = "" + i + j;
+        similarity = getSimilarity(neurons.get(key), input);
+        if (similarity > winningValue) {
+          winningValue = similarity;
+          winner = key;
+        }
       }
     }
+    return winner;
   }
 
   // Here learningRate will be 1 for the winning neuron
