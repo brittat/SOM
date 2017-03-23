@@ -53,6 +53,15 @@ public class KohonenMap {
 
   // Here learningRate will be 1 for the winning neuron
   public void updateWinner(int winner, double learningRate) {
+  public List<String> findWinnerNeighbors(String winner) {
+    //get the current max distance to winning neighbors
+    // loop through neighbors and see if they're winners
+    // alt: do a discrete approx.
+    List<String> winningNeighbors;
+
+  }
+
+
   public void updateNeuron(String neuron, double learningRate) {
 
   }
