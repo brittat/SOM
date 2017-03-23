@@ -18,6 +18,7 @@ public class KohonenMap {
     this.learningParam = learningParam;
     this.neighborParam = neighborParam;
     this.t = 0;
+    //How to store nodes?
   }
 
   public void train() {
@@ -33,5 +34,26 @@ public class KohonenMap {
 
   public int findWinner(double[] input) {
     //Loop over all nodes and find the one with weights closest to input
+    double winningValue = -1;
+
+    for (int i = 0; i < horizontalNodes; i ++) {
+      for (int j = 0; j < verticalNodes; j ++) {
+
+      }
+    }
+  }
+
+  // Here learningRate will be 1 for the winning neuron
+  public void updateWinner(int winner, double learningRate) {
+
+  }
+
+  public double dotProduct(double[] firstVector, double[] secondVector) {
+    int numDim = firstVector.length;
+    double dotProduct = 0;
+    for (int i = 0; i < numDim; i ++) {
+      dotProduct += firstVector[i]*secondVector[i];
+    }
+    return dotProduct;
   }
 }
