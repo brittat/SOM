@@ -66,6 +66,14 @@ public class KohonenMap {
 
   }
 
+  public double getUpdateRate() {
+    return decay(this.learningFactor, this.learningDenom);
+  }
+
+  public double getNeighborhoodRadius() {
+    return decay(this.neighborhoodFactor, this.neighborhoodDenom);
+  }
+
   public double getSimilarity(double[] input, double[] neuron) {
     return getMagnitude(input)*getMagnitude(neuron)/dotProduct(input, neuron);
   }
